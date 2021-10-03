@@ -1,0 +1,104 @@
+@import '../2-layout/_layout'
+@import '../3-module/_placeholder'
+
+.header-main__search-box
+    display: flex
+    align-items: center
+    input
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        padding: 10px 0 10px 20px
+        font-size: 1rem
+    button
+        color: white
+        background-color: $primary-color
+        padding: 11px
+        font-size: 1rem
+        font-weight: bold
+        border: none
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+
+.favs-simbol
+    display: flex
+    .notification
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $primary-color
+        margin-top: -20px
+        padding: 5px
+        height: 20px
+        border-radius: 10px
+
+.nav-header__link
+    width: 500px
+    display: flex
+    margin: 15px
+    flex-wrap: wrap
+    a
+        margin: 0 5px
+        color: $black
+        transition: .5s
+        &:hover
+            color: $primary-color
+            border-bottom: 1px solid $primary-color
+
+.banner__img-1
+    background-image: url('../assets/banner-1.jpg')
+    @extend %banner-img
+
+.banner__img-2, .banner__img-3
+    @extend %banner-img
+
+.banner__img-2
+    background-image: url('../assets/banner-2.jpg')
+
+.banner__img-3
+    background-image: url('../assets/banner-3.jpg')
+
+.title-section
+    margin-bottom: 30px
+
+.box-products
+    @extend %box-products
+
+.circle-box
+    background-color: $primary-color
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0 10px
+    height: 110px
+    width: 120px
+    text-align: center
+    border-radius: 50%
+    .circle-box__num, .circle-box__string
+        color: white
+    .circle-box__num
+        font-weight: bold
+        font-size: 1.3rem
+        margin-top: 15px
+    .circle-box__string
+        margin-top: -15px
+
+.promotion
+    h2
+        font-size: 2rem
+        margin-bottom: 20px
+    p
+        font-size: 1.3rem
+        margin-bottom: 20px
+    button
+        width: 200px
+        font-size: 1rem
+
+.sold
+    .box-products-c
+        .box-products
+            .new-card
+                color: $primary-color
+                background-color: white
+                border: 1px solid $primary-color
+
+        

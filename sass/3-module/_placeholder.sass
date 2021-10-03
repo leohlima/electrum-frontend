@@ -1,0 +1,82 @@
+@import '../2-layout/_layout'
+
+%center-img
+    background-size: cover
+    background-position: center
+
+%banner-img
+    @extend %center-img
+    margin-right: 15px
+    width: 280px
+    height: 200px
+    transition: .5s
+    &:hover
+        background-size: 350px
+    .banner__box
+        background-color: $primary-color
+        opacity: .8
+        width: 200px
+        height: 180px
+        border-bottom-right-radius: 70px
+        display: flex
+        flex-direction: column
+        font-size: 1.7rem
+        color: white
+        font-weight: 600
+        padding: 15px 15px
+        .ver-mais
+            display: flex
+            align-items: center
+            margin-top: 15px
+            i
+                margin-left: 15px
+                font-size: 1.4rem
+
+%btn-buy
+    color: white
+    padding: 10px
+    border-radius: 20px
+    font-weight: bold
+    outline: none
+    border: none
+    background-color: $primary-color
+    transition: .3s
+    &:hover
+        color: $primary-color
+        outline: 1px solid $primary-color
+        background-color: white
+
+%box-products
+    padding: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 180px
+    border: 1px solid $border-color
+    transition: .3s
+    cursor: pointer
+    &:hover
+        border-color: red
+    img
+        width: 120px
+    .new-card
+        color: white
+        background-color: $primary-color
+        width: 50px
+        margin-left: 90px
+        text-align: center
+        margin-top: 10px
+    p
+        font-weight: bold
+        margin-bottom: 10px
+    .category
+        color: $border-color
+        margin-bottom: 10px
+    .price
+        color: $primary-color
+        font-weight: bold
+        font-size: 1.3rem
+
+.btn-buy
+    margin-top: 10px
+    @extend %btn-buy
