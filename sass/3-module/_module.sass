@@ -19,6 +19,15 @@
         border-top-right-radius: 20px
         border-bottom-right-radius: 20px
 
+.header-user
+    display: flex
+    flex-wrap: wrap    
+    p
+        margin: 0 10px    
+
+.header-main__favs
+    margin-top: 25px    
+
 .favs-simbol
     display: flex
     .notification
@@ -47,12 +56,15 @@
 .banner__img-1
     background-image: url('../assets/banner-1.jpg')
     @extend %banner-img
+    @extend %media-715px
 
 .banner__img-2, .banner__img-3
     @extend %banner-img
+    @extend %media-715px
 
 .banner__img-2
     background-image: url('../assets/banner-2.jpg')
+    
 
 .banner__img-3
     background-image: url('../assets/banner-3.jpg')
@@ -62,8 +74,12 @@
 
 .box-products
     @extend %box-products
+    @extend %media-715px
 
-.circle-box
+.cont-regressive
+    @extend %media-715px
+
+.circle-box    
     background-color: $primary-color
     display: flex
     flex-direction: column
@@ -100,5 +116,60 @@
                 color: $primary-color
                 background-color: white
                 border: 1px solid $primary-color
+    margin-bottom: 40px
 
-        
+.newsletter
+    .header-main__search-box
+        margin-top: -30px
+        margin-bottom: 15px
+    .button
+        padding: 12px
+        &:hover
+            border: none
+            padding: 11px
+    input
+        border: 1px solid $border-color
+    a
+        margin: 0 10px
+
+.footer-column
+    a
+        margin-bottom: 5px
+        transition: .5s
+        color: white
+        &:hover
+            color: $primary-color
+    width: 200px
+    margin: 15px 20px
+    display: flex
+    flex-direction: column
+    h3, p, div
+        margin-bottom: 5px
+        color: white
+    h3
+        margin-bottom: 15px
+        font-size: 1.5rem
+    .footer-phone,  .footer-street
+        display: flex
+
+.my-contact
+    background-color: $black
+    text-align-last: center
+    color: white
+    font-size: 1.5rem
+    a
+        color: $primary-color
+        font-weight: bold
+
+.phone-box
+    position: absolute
+    width: 20%
+    display: block
+    right: 60px
+    bottom: 10px
+
+#phone
+    width: 100%
+    
+   
+
