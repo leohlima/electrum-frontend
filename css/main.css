@@ -528,7 +528,7 @@ h1 {
 }
 
 .banner__img-2, .banner__img-3, .banner__img-1 {
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 
@@ -539,7 +539,7 @@ h1 {
   transition: 0.5s;
 }
 .banner__img-2:hover, .banner__img-3:hover, .banner__img-1:hover {
-  background-size: 350px;
+  background-size: 120%;
 }
 .banner__img-2 .banner__box, .banner__img-3 .banner__box, .banner__img-1 .banner__box {
   background-color: RGB(209, 0, 36);
